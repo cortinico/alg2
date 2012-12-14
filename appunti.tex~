@@ -93,7 +93,7 @@ Siano $X_1, X_2, \cdots, X_n$ variabili aleatorie e definiamo con $S_i = \mbox{s
 Tali variabili aleatorie si dicono K-Wise indipendent se $\forall$ scelta di $i_1 < i_2 < \cdots < i_k \in [n]$ e $a_{i_j} \in S_{i_j}$ succede che:
 $$\Pr[X_{i_1} = a_{i_1} \wedge X_{i_2} = a_{i_2} \wedge \cdots \wedge X_{i_k} = a_{i_k}] = \Pr[X_{i_1} = a_{i_1}] \times \Pr[X_{i_2} = a_{i_2}] \times \cdots \times \Pr[X_{i_k} = a_{i_k}] $$
 
-Ne segue facilmente che $$E[X_{i_1}, X_{i_2}, \cdots, X_{i_k}] = E[X_{i_1}] \times E[X_{i_2}] \times \cdots \times E[X_{i_k}] $$
+Ne seguen facilmente che $$E[X_{i_1}, X_{i_2}, \cdots, E_{i_k}] = E[X_{i_1}] \times E[X_{i_2}] \times \cdots \times E[X_{i_k}] $$
 
 Possiamo adesso estendere il concetto ad una famiglia di funzioni hash:
 
@@ -953,8 +953,8 @@ Molti problemi appartengono alla classe \textsf{NP-Hard}, quali ad esempio probl
 
 Definiamo la classe \textsf{NP} come $$\mbox{NP} = \{ \pi \in \{0,1\}^* \; : \exists \mbox{poly} \; p(), V : $$
 \begin{eqnarray}
-1) & \forall x \in \{0,1\}^*, \;  x \in \pi \Leftrightarrow & \exists y \in \{0,1\}^*, |y| = p(|x|), V(x,y) = 1 \nonumber \\
-2) & \forall x \in \{0,1\}^*, \;  x \not\in \pi \Leftrightarrow & \forall y \in \{0,1\}^*, V(x,y) = 0 \nonumber \} \\
+1) & \forall x \in \{0,1\}^*, \;  x \in \pi & \Leftrightarrow & \exists y \in \{0,1\}^*, |y| = p(|x|), V(x,y) = 1 \nonumber \\
+2) & \forall x \in \{0,1\}^*, \;  x \not\in \pi & \Leftrightarrow & \forall y \in \{0,1\}^*, V(x,y) = 0 \nonumber \} \\
 \end{eqnarray}
 
 Fra i possibili problemi all'interno di una classe si possono definire due tipi di problemi:
@@ -965,7 +965,7 @@ Fra i possibili problemi all'interno di una classe si possono definire due tipi 
 
 Nei problemi decisionali si tratta di restituire ad una domanda di appartenenza o meno ad un insieme, quindi le possibili risposte possono essere \textsf{true} o \textsf{false}. Nei problemi di ottimizzazione si cerca una soluzione che minimizzi/massimizzi una funzione costo/beneficio.
 
-In particolare definiamo la funzione costo/beneficio come: $$C : \pi \rightarrow \mathbb{R}$$ E distinguiamo due tipi di problemi di ottimizzazione: i problemi di minimo, in cui cerchiamo di minimizzare il costo, cerchiamo dunque $$\mbox{arg} \min_{i \in \pi} C(i)$$ Mentre nei problemi di massimo cerchiamo di massimizzare il beneficio, ovvero: $$\mbox{arg} \max_{i \in \pi} C(i)$$.
+In particolare definiamo la funzione costo/beneficio come: $$C : \pi \rightarrow \mathbb{R}$ E distinguiamo due tipi di problemi di ottimizzazione: i problemi di minimo, in cui cerchiamo di minimizzare il costo, cerchiamo dunque $$\mbox{arg} \min_{i \in \pi} C(i)$$ Mentre nei problemi di massimo cerchiamo di massimizzare il beneficio, ovvero: $$\mbox{arg} \max_{i \in \pi} C(i)$$.
 
 \subsection{Problema del Commesso Viaggiatore}
 

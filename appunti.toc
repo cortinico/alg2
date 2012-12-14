@@ -64,3 +64,4 @@
 \contentsline {part}{II\hspace {1em}Hard Problems}{43}
 \contentsline {chapter}{\numberline {8}R-Approssimazione}{45}
 \contentsline {subsection}{\numberline {8.0.3}Problema del Commesso Viaggiatore}{46}
+\contentsline {subsection}{\numberline {8.0.4}Problema del Maximal Independent Set}{46}
